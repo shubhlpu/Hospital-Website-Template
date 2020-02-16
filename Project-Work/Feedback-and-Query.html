@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+	<title>
+	Feedback and Query - Hospital Management System
+	</title>
+  <script>
+  function abc(x)
+  {
+     x.style.background="yellow";
+  }
+    {
+      function save()
+      {
+          alert("Your feedback has been saved. kush raho")
+      }
+    }
+  </script>
+	<style>
+			.footer
+	{
+          color: black;
+          font-family: cursive;
+          background-color: white;
+          text-align: center;
+          margin-top: 50px;
+          background-repeat: no-repeat;
+	}
+    table
+    {
+
+    	margin-top: 40px;
+    	margin-left: 20px;
+    	background-color: rgba(255,255,255,0.5);
+       
+      border: solid 3px rgb(190,200,212);
+    }
+       b
+       {
+
+       }
+		body
+		{
+			background-repeat: no-repeat;
+			background-size: 1590px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="feedback.jpg">
+<!-- first division for header -->
+<div class="logo">
+<a href="Home-Page.html"><img style="height: 200px;" src="hms-logo.png" alternate="logo for hospital management system"></a>
+</div>
+<ul>
+   <li class="dropdown">
+    <a class="dropbtn">Patient Care and Services</a>
+    <div class="dropdown-content">
+     <a href="Admission.html">Admission Process</a>
+      <a href="Discharge.html">Discharge Process</a>
+      <a href="guidlines.html">Guidelines for Visitors</a>
+      <a href="Patient-Attendant-Responsibilities.html">Patient and Attendant Responsibilities</a>
+      <a href="Rights.html">Patient and Attendant Rights</a>
+      <a href="ICU.html">Visiting guidelines for Intensive Care Units (ICUs)</a>
+      <a href="Blood.html">Blood Bank</a>
+      
+    </div>
+  <li><a href="Project-OPD.html">OPD Section</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Specialities</a>
+    <div class="dropdown-content">
+        <a href="Anaesthesiology.html">Anesthiology</a>
+      <a href="Cardiology.html">Cardiology</a>
+      <a href="Dermatology.html">Dermatology</a>
+      <a href="ENT.html">ENT</a>
+      <a href="Endocrinology.html">Endocrinology</a>
+      <a href="Haematology.html">Haematology</a>
+      <a href="Nephrology.html">Nephrology</a>
+      <a href="Neurology.html">Neurology</a>
+      <a href="Oncology.html">Oncology</a>
+      <a href="Ophthalmology.html">Ophthalmology</a>
+      <a href="Orthopaedics-and-Joint-Replacement.html">Orthopaedics and Joint Replacement</a>
+      <a href="Paediatrics-and-Neonatology.html">Paediatrics and Neonatology</a>
+      <a href="Radiology.html">Radiology</a>
+      <a href="Urology.html">Urology</a>
+
+    </div>
+  </li>
+  <li><a href="Project_Work--About_Section.html">About Us</a></li>
+  <li><a href="Careers.html">Careers</a></li>
+  <li><a href="Contact-Us.html">Contact Us</a></li>
+  <li><a href="Feedback-and-Query.html">Feedback and Query</a></li>
+  <li><a href="Login-Page.html">Log In</a></li>
+</ul>
+
+<table align="center">
+  <tr><th>
+  <form>
+    <h2><u> Personal Details </u></h2>
+    <b style="color: black;"> Type of query* </b><br>
+    <select name="query" style="width: 100%;"> 
+    <option selected>Select type of query</option>
+    <option>Enquiry</option>
+    <option>Doctor Opinion</option>
+    <option>Request for surgery estimate</option>
+    <option>Appointment</option>
+    <option>Complaint/Feedback</option>
+    <option>Compliment</option>
+    <option>Others</option>
+    </select> <br> <br>
+    <b style="color: black;">First Name* </b><br>
+    <input  type="text" name="firstname" placeholder="First Name"  style="width: 99%;" ><br><br>
+    <b style="color: black;">Last Name* </b><br>
+    <input type="text" name="lastname"  placeholder="Last Name" onfocus="abc(this)" style="width: 99%;" required><br><br>
+    <b style="color: black;">Name of Patient</b> <br>
+    <input type="text" name="patientname" placeholder="Name of Patient" style="width: 99%;" ><br><br>
+    <b style="color: black;">Contact No* </b><br>
+    <input type="text" name="contact" placeholder="Contact No" style="width: 99%;" ><br><br>
+    <b style="color: black;">Email id* </b><br>
+    <input type="text" name="email" placeholder="Email id" style="width: 99%;" required><br><br>
+    <b style="color: black;">Feedback/Query* </b><br>
+    <textarea rows="5" cols="50" name="feedback" placeholder="Enter your feedback here... "></textarea> <br><br>
+    <input  onclick="save()" type="button" value="Submit"/> 
+  </th></tr>
+  </form>
+  </table>
+  <div class="footer">
+    	<details>
+  <summary>Copyright 2017.</summary>
+  <p> - Hospital Management System. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the sole property of the HMS Pvt Ltd.</p>
+        </details>
+</div>
+
+	
+</body>

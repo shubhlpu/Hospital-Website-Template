@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script>
+		function must(x)
+		{
+			x.style.background="yellow"
+			
+		}
+		function check(form)
+		{
+			if(form.userid.value == "11615053" && form.pswrd.value == "Yash"  || form.userid.value == "11615015" && form.pswrd.value == "Krishna"  || form.userid.value == "11615060" && form.pswrd.value == "Singh")
+          {
+           window.open('after_login.html')
+          }
+            else
+          {
+           alert("Error Password or Username")
+           }
+		}
+	</script>
+	<style>
+	.footer
+	{
+		margin-top: 120px;
+		background-color: white;
+	}
+	.logo
+	{
+			background-color:rgba(0,0,0,0.1);
+		background-repeat: no-repeat;
+	}
+	body
+	{
+		background-image: url('login.jpg');
+		background-repeat: no-repeat;
+		background-size: 1600px;
+	}
+		.login
+		{
+			
+			text-align: center;
+			background-color: rgba(12,87,154,0.4);
+            border:solid 5px grey;
+            width:800px;
+            height: 300px;
+            margin-top: 125px;
+            margin-left: 300px;
+		}
+		h1
+		{
+			font-size:30px;
+			font-style: cursive;
+
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div class="logo">
+	<a href="Home-Page.html"><img style="height: 200px;" src="hms-logo.png" alternate="logo for hospital management system"></a>
+</div>
+<ul>
+   <li class="dropdown">
+    <a class="dropbtn">Patient Care and Services</a>
+    <div class="dropdown-content">
+      <a href="Admission.html">Admission Process</a>
+      <a href="Discahrge.html">Discharge Process</a>
+      <a href="guidlines.html">Guidelines for Visitors</a>
+      <a href="Patient-Attendant-Responsibilities.html">Patient and Attendant Responsibilities</a>
+      <a href="Rights.html">Patient and Attendant Rights</a>
+      <a href="ICU.html">Visiting guidelines for Intensive Care Units (ICUs)</a>
+      <a href="Blood.html">Blood Bank</a>
+      
+    </div>
+  <li><a href="Project-OPD.html">OPD Section</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Specialities</a>
+    <div class="dropdown-content">
+      <a href="Anaesthesiology.html">Anesthiology</a>
+      <a href="Cardiology.html">Cardiology</a>
+      <a href="Dermatology.html">Dermatology</a>
+      <a href="ENT.html">ENT</a>
+      <a href="Endocrinology.html">Endocrinology</a>
+      <a href="Haematology.html">Haematology</a>
+      <a href="Nephrology.html">Nephrology</a>
+      <a href="Neurology.html">Neurology</a>
+      <a href="Oncology.html">Oncology</a>
+      <a href="Ophthalmology.html">Ophthalmology</a>
+      <a href="Orthopaedics-and-Joint-Replacement.html">Orthopaedics and Joint Replacement</a>
+      <a href="Paediatrics-and-Neonatology.html">Paediatrics and Neonatology</a>
+      <a href="Radiology.html">Radiology</a>
+      <a href="Urology.html">Urology</a>
+
+    </div>
+  </li>
+  <li><a href="Project_Work--About_Section.html">About Us</a></li>
+  <li><a href="Careers.html">Careers</a></li>
+  <li><a href="Contact-Us.html">Contact Us</a></li>
+  <li><a href="Feedback-and-Query.html">Feedback and Query</a></li>
+  <li><a href="Login-Page.html">Log In</a></li>
+</ul>
+<form name="LogIn">
+	<div class="login">
+ 	<h1>Log In</h1><hr><br><br>
+ 	<div class="input">
+ 		 <abbr title="You can have maximum length of 15."><input style="height: 15%; width: 30%; text-align: center;" type="username" name="userid" placeholder="LogIn ID" maxlength="15" onfocus="must(this)" required></abbr><br><br>
+ 	    <abbr title="You can have maximum length of 15."><input style="height: 15%; width: 30%; text-align: center;" type="password" name="pswrd" placeholder="Password" maxlength="15" onfocus="must(this)" required></abbr><br><br>
+ 	</div>
+ 	
+ <input style="height: 13%; width: 15%;" onclick="check(this.form)" type="button" value="LogIn"/>
+ <input style="height: 13%; width: 15%;" type="Reset" value="Reset"/></a><br><br>
+ </div>
+
+</form>
+ 
+ <div class="footer">
+    <center>	<details>
+  <summary>Copyright 2017.</summary>
+  <p> - Hospital Management System. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the sole property of the HMS Pvt Ltd.</p>
+        </details></center>
+</div>
+</body>
+</html>
